@@ -473,6 +473,14 @@ section {
     color: #fff;
 }
 
+ul {
+    margin-left: 20px;
+}
+
+ul li {
+    margin-bottom: 5px;
+}
+
 
 /* --------- 2.4 Navigation ---------- */
 
