@@ -341,9 +341,7 @@ section {
 }
 
 #banner #logo h1 {
-    font-size: 28px;
-    margin-right: 10px;
-    font-weight: 900;
+    margin-left: 10px;
     padding: 0;
 }
 
@@ -479,6 +477,7 @@ ul {
 
 ul li {
     margin-bottom: 5px;
+
 }
 
 
@@ -725,6 +724,11 @@ a img:hover {
 /* 3. Fonts */
 /*------------------------------------------------------------------------------------------*/
 
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Open Sans', sans-serif, Arial, Helvetica;
+    font-weight: 700;
+}
+
 h1 {
     padding: 20px 0;
 }
@@ -777,7 +781,7 @@ h6 {
 .section-heading h3 {
     font-size: 14px;
     font-weight: bold;
-    color: #ccc;
+    color: #767676;
     letter-spacing: 2px;
     padding-bottom: 0;
 }
@@ -790,13 +794,28 @@ h6 {
     background-size: cover;
 }
 
-#banner-content.row {
-    padding-top: 170px;
+#banner-content {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding-top: 120px;
     padding-bottom: 100px;
 }
 
+/* #banner-content h1 {
+    grid-column: 2;
+    grid-row: 1;
+}
+
+#banner-content > div {
+    grid-column: 1;
+    grid-row: 1;
+} */
+
+
+
 #banner h1 {
     padding-top: 5%;
+    margin-left: 30px;
 }
 
 #banner .section-heading:before {
@@ -805,6 +824,7 @@ h6 {
     width: 30px;
     height: 5px;
     margin-top: 30px;
+
 }
 
 
@@ -1465,7 +1485,7 @@ blockquote {
 
 .pricing-sub {
     font-style: italic;
-    color:#ccc;
+    color: #767676;
     margin:0 0 25px 0;
 }
 

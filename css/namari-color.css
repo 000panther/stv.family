@@ -124,7 +124,7 @@ a:hover, #header.nav-solid nav a:hover {
 /* Banner Background and Text Colors */
 
 #banner {
-    background: url("../images/banner-images/banner-image-2.jpg") no-repeat center top;
+    background-color: #f3f1e5;
     background-size:cover;
 }
 
@@ -162,7 +162,7 @@ body {
 
 /* Banner Typography */
 
-#banner h1 {
+#banner h2 {
     font-family: 'Open Sans', sans-serif, Arial, Helvetica;
     font-size:62px;
     line-height:60px;
@@ -170,7 +170,7 @@ body {
     color:#111;
 }
 
-#banner h2 {
+#banner h3 {
     font-family: 'Open Sans', sans-serif, Arial, Helvetica;
     font-size:18px;
     font-weight:300;
@@ -191,7 +191,7 @@ body {
     font-family: 'Open Sans', sans-serif, Arial, Helvetica;
     font-size: 16px;
     font-weight:300;
-    color:#9c9c9c;
+    color:#767676 c;
 }
 
 /* Testimonial */
@@ -323,11 +323,11 @@ ul li::marker {
     font-family: 'Open Sans', sans-serif, Arial, Helvetica;
     font-size:12px;
     font-weight:normal;
-    color:#999;
+    color:#747474 ;
 }
 
 /* Footer Icon Color */
 
 #landing-footer i {
-    color:#999;
+    color:#747474 ;
 }
