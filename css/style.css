@@ -841,6 +841,12 @@ h6 {
     font-size: 15px !important;
 }
 
+.icon svg {
+    width: 2em;
+    height: 2em;
+    vertical-align: -0.125em;
+}
+
 /*Icon Block*/
 
 .icon-block {

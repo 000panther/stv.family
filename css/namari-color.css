@@ -31,7 +31,7 @@ a:hover, #header.nav-solid nav a:hover {
 
 /* Default Icon Color */
 
-.icon i {
+.icon i, .icon svg {
     color:#66a11d;
 }
 
