@@ -1,6 +1,6 @@
 "use strict";
 
-$(document).ready(function () {
+$(function () {
 	/* Video Lightbox */
 	if (!!$.prototype.simpleLightboxVideo) {
 		$('.video').simpleLightboxVideo();
@@ -23,7 +23,6 @@ $(document).ready(function () {
 		}
 	});
 
-	$("#nav-mobile").html($("#nav-main").html());
 	$("#nav-mobile ul a").on("click",function() {
 		if ($("nav#nav-mobile ul").hasClass("expanded")) {
 			$("nav#nav-mobile ul.expanded").removeClass("expanded").slideUp(250);
@@ -49,13 +48,13 @@ $(document).ready(function () {
 
 
 /* Preloader and animations */
-$(window).load(function () { // makes sure the whole site is loaded
+$(window).on('load', function () { // makes sure the whole site is loaded
 	$('#status').fadeOut(); // will first fade out the loading animation
 	$('#preloader').delay(350).fadeOut('slow'); // will fade out the white DIV that covers the website.
 	$('body').delay(350).css({'overflow-y': 'visible'});
 
 	/* WOW Elements */
-	if (typeof WOW == 'function') {
+	if (typeof WOW === 'function') {
 		new WOW().init();
 	}
 
