@@ -21,7 +21,7 @@ body {
 
 /* Default Link Color */
 
-a, .la-ball-triangle-path {
+a {
     color: #66a11d;
 }
 
