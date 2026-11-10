@@ -1571,3 +1571,24 @@ nav#nav-mobile.expanded ul {
         transition: none;
     }
 }
+
+/* Mehrere Kontakt-Buttons im Banner nebeneinander, auf dem Handy untereinander */
+#banner .button + .button {
+    margin-left: 12px;
+}
+
+@media only screen and (max-width: 580px) {
+    #banner .button {
+        display: block;
+        width: fit-content;
+        margin: 0 0 12px 0;
+    }
+
+    #banner .button + .button {
+        margin-left: 0;
+    }
+
+    #banner .button:first-of-type {
+        margin-top: 35px;
+    }
+}
