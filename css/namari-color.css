@@ -164,8 +164,9 @@ body {
 
 #banner h2 {
     font-family: 'Open Sans', sans-serif, Arial, Helvetica;
-    font-size:62px;
-    line-height:60px;
+    /* wächst mit der Bildschirmbreite, damit "Unterstützungs-" auch auf schmalen Handys ganz sichtbar ist */
+    font-size:clamp(28px, 5.2vw, 62px);
+    line-height:0.97;
     font-weight:800;
     color:#111;
 }

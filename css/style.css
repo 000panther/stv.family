@@ -781,7 +781,7 @@ h6 {
 
 #banner-content {
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
     padding-top: 120px;
     padding-bottom: 100px;
 }
@@ -1590,5 +1590,21 @@ nav#nav-mobile.expanded ul {
 
     #banner .button:first-of-type {
         margin-top: 35px;
+    }
+}
+
+/* Banner unter 900px einspaltig: das große Logo hat dort keinen Platz (es steht ja schon in der Navigation),
+   und die Überschrift bekommt die volle Breite */
+@media only screen and (max-width: 899px) {
+    #banner-content {
+        grid-template-columns: minmax(0, 1fr);
+    }
+
+    #banner #banner-content > h1 {
+        display: none;
+    }
+
+    #banner .section-heading h2 {
+        font-size: clamp(28px, 9.5vw, 62px);
     }
 }
